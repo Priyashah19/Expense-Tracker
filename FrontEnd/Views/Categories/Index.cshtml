@@ -1,0 +1,47 @@
+﻿@model IEnumerable<task.Models.Category>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 style="color:#4E1A3D;text-align:center;font-family: fantasy;margin-top:15px"><i>Category Index</i></h1>
+
+<p>
+    <a asp-action="Create" style="color:#4E1A3D;">Create New</a>
+</p>
+<table class="table" style="background-color:#4E1A3D;color:#B9968D">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Category_Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category_Limit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category_Description)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category_Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category_Limit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category_Description)
+            </td>
+            <td>
+                    <a asp-action="Edit" asp-route-id="@item.Category_Id" style="color:#B9968D;">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Category_Id" style="color:#B9968D;">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Category_Id" style="color:#B9968D;">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

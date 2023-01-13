@@ -1,0 +1,221 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #F8E5E6;
+
+}
+
+.display-4 {
+    color: #4E1A3D;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #4E1A3D;
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #F8E5E6;
+        display: block;
+    }
+
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+
+    .main {
+        margin-left: 100px; 
+        font-size: 28px; 
+        padding: 0px 10px;
+        margin-top: 30px;
+
+    }
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+#sidenav .e-menu-wrapper{
+    width:200px;
+    background-color: aqua;
+}
+
+#sidenav-toggler{
+    padding:10px;
+    border-radius:2px;
+    font-size: 16px;
+    cursor:pointer;
+}
+
+.widgets {
+    display: flex;
+    flex-direction:;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+}
+.main-sec {
+    margin: 20px 50px 0 150px;
+    padding: 20px 20px;
+    text-align: justify;
+    
+}
+
+.total_income {
+    font-size: 16px;
+    padding: 24px;
+    color: aliceblue;
+    background-color: mediumpurple;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    border-right: 10px solid pink;
+    width: 200px;
+    height: 150px;
+    font-family: fantasy;
+    margin-left: 125px;
+    margin-bottom: 100px;
+    display: inline-block;
+}
+
+.income {
+    font-size: 1.5em;
+    color: darkmagenta;
+    height: 75px;
+    width: 100px;
+}
+
+.amount {
+    font-size: 1em;
+    color: hotpink;
+}
+
+
+.total_expense {
+    font-size: 16px;
+    padding: 24px;
+    color: aliceblue;
+    background-color: mediumpurple;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    border-right: 10px solid pink;
+    width: 200px;
+    height:150px;
+    font-family: fantasy;
+    margin-left: 15px;
+    margin-bottom: 200px;
+    display: inline-block;
+}
+
+.expense {
+    font-size: 1.5em;
+    color: darkmagenta;
+    height: 75px;
+    width: 100px;
+}
+
+.amt {
+    font-size: 1em;
+    color: hotpink;
+}
+
+.total_expense_limit {
+    font-size: 16px;
+    padding: 24px;
+    color: aliceblue;
+    background-color: mediumpurple;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    border-right: 10px solid pink;
+    width: 200px;
+    height: 150px;
+    font-family: fantasy;
+    margin-left: 20px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.expense-limit {
+    font-size: 1.13em;
+    color: darkmagenta;
+    height: 25px;
+    width: 100px;
+    
+}
+
+.limit {
+    font-size: 1em;
+    color: hotpink;
+    height: 50px;
+    width: 100px;
+    margin-top: 50px;
+}
+
+
+
+.table-container {
+    margin: 30px 20px 0px 10px;
+}
+.table-main{
+    padding: 20px;
+    margin: 100px 20px 0px 200px;
+    width:1000px;
+    height:250px;
+    display:flex;
+    background-color: floralwhite;
+}
+
+.table-trans {
+    padding: 20px;
+    margin: 25px 20px 0px 200px;
+    width: 1000px;
+    height: 250px;
+    display: flex;
+    background-color: floralwhite;
+}
+table, th, td {
+    border: 1px solid #4E1A3D;
+}
+
+tr:nth-child(even) {
+    background-color: #F8E5E6;
+}

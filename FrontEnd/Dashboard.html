@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="name" content="content" />
+    <meta name="viewport" content="width = device-width,initial-scale = 1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="site.css" />
+    <title>DASHBOARD</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 style="color:#4E1A3D;text-align:center;font-family: fantasy;margin-top:15px">
+                <i class="fa fa-gbp" > <i>EXPENSE TRACKER</i> </i>
+            </h1>
+            <h6 style="color:#4E1A3D;text-align:center;font-family: fantasy;margin-top:10px"><i>Track your expenses here...</i></h6>
+        </div>
+        <div class="main">
+            <nav>
+                <div class="sidenav">
+                    <i> <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Index">Home</a></i>
+                    <i>
+                        <a class="nav-link " asp-area="" asp-controller="Dashboard" asp-action="DashIndex">Dashboard</a>
+                    </i>
+                        <i>
+                        <a class="nav-link " asp-area="" asp-controller="Categories" asp-action="Index">Category</a>
+                    </i>
+                    <i> <a class="nav-link " asp-area="" asp-controller="Transactions" asp-action="Index">Expense</a>
+                </div>
+                
+        </nav>
+      
+
+        </div>
+    </header>
+
+    <section class="widgets">
+        <div class=" main-sec">
+            <div class="total_income">
+                <div class="income">Total Income</div>
+                <div class="amount">100000</div>
+            </div>
+
+            <div class="total_expense">
+                <div class="expense">Total Expense</div>
+                <div class="amt">50000</div>
+                </div>
+
+                <div class="total_expense_limit">
+                  <div class="expense-limit">Total Expense Limit</div>
+                  <div class="limit">30000</div>
+                    </div>
+        </div>
+    </section>
+    
+
+    <section>
+        <div id="myChart" style="width:100%; max-width:700px; height:500px;margin:0 0 0 300px;background-color:floralwhite"></div>
+
+        <script>
+            google.charts.load('current', { 'packages': ['corechart'] });
+            google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Category Title', 'Limit'],
+                    ['Shopping', 5000],
+                    ['Transportation', 4000],
+                    ['Bills & Emis', 10500],
+                    ['Entertainment', 3000],
+                    ['Others', 8000]
+                ]);
+
+                var options = {
+                    title: ' Expense Categories '
+                };
+
+                var chart = new google.visualization.BarChart(document.getElementById('myChart'));
+                chart.draw(data, options);
+            }
+        </script>
+
+    </section>
+    
+
+    <section class="table-container">
+        <div class=" table-main">
+            <h4>CATEGORY TABLE</h4>
+            <table style="width:100%">
+                <tr nth-child>
+                <th>Category Id</th>
+                <th>Category Name</th>
+                <th>Category Limit</th>
+                <th>Category Description</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Shopping</td>
+                <td>15000</td>
+                <td>Shoes</td>
+              </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Travel</td>
+                <td>3000</td>
+                <td>Mumbai to Kolkata</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Food</td>
+                <td>2000</td>
+                <td>Cafe and Restro </td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Medical</td>
+                <td>5000</td>
+                <td>Personal Medicines </td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Bills & Emi's</td>
+                <td>10000</td>
+                <td>Electricity Bill,Insurance Premium,etc </td>
+            </tr>
+
+            </table>
+        </div>
+
+        <div class=" table-trans">
+            <h4> EXPENSE TABLE</h4>
+            <table style="width:100%">
+                <tr nth-child>
+                <th>Expense Id</th>
+                <th>Expense Title</th>
+                <th>Expense_Description</th>
+                <th>Expense_Limit</th>
+                <th>Category Id</th>
+                <th>Category Title</th>
+                <th> DateTime</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>shoes</td>
+                <td>puma shoes</td>
+                <td>15000</td>
+                <td>1</td>
+                <td>shopping</td>
+                <td>04-01-2023 23:40:00</td>
+              </tr>
+
+            <tr>
+                <td>2</td>
+                    <td>Medicines</td>
+                    <td>Personal Med</td>
+                    <td>2000</td>
+                    <td>2</td>
+                    <td>Medicines</td>
+                    <td>07-01-2023 03:47:00</td>
+            </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Bills</td>
+                    <td>Electricity Bill</td>
+                    <td>4000</td>
+                    <td>3</td>
+                    <td>Bills & Emi's</td>
+                    <td>08-01-2023 02:00:00</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Makeup</td>
+                    <td>Lipstick</td>
+                    <td>1000</td>
+                    <td>1</td>
+                    <td>Shopping</td>
+                    <td>10-01-2023 22:37:00</td>
+                </tr>
+
+            </table>
+        </div>
+
+    </section>
+
+    <section>
+        <div id="myPlot" style="width:100%;max-width:600px; margin:50px 0 0 300px"></div>
+
+        <script>
+            var xArray = [4000, 6000, 7500, 8250, 9000, 10500, 11000, 12250, 13500, 14000, 15250];
+            var yArray = [1, 2, 2, 3, 3, 4, 5, 4, 2, 5, 6];
+
+            // Define Data
+            var data = [{
+                x: xArray,
+                y: yArray,
+                mode: "markers"
+            }];
+
+            // Define Layout
+            var layout = {
+                xaxis: { range: [4000, 16000], title: "Expenses" },
+                yaxis: { range: [1, 10], title: "Category Id" },
+                title: "CATEGORY VS EXPENSES"
+            };
+
+            // Display using Plotly
+            Plotly.newPlot("myPlot", data, layout);
+        </script>
+
+    </section>
+
+
+</body>
+</html>

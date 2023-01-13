@@ -1,0 +1,54 @@
+﻿@model task.Models.Transaction
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 style ="color:#4E1A3D;text-align:center;font-family: fantasy;margin-top:15px"><i>Details</i></h1>
+
+<div>
+    <h4 style="color:#4E1A3D;text-align:center;font-family: fantasy;margin-top:15px"><i>>Transaction</i></h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Expense_Title)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Expense_Title)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Expense_Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Expense_Description)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Expense_Limit)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Expense_Limit)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Category_Id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Category_Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Category_Title)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Category_Title)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DateTime)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DateTime)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Expense_Id" style="color:#4E1A3D">Edit</a> |
+    <a asp-action="Index" style="color:#4E1A3D">Back to List</a>
+</div>

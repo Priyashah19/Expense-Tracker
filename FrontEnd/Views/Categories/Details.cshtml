@@ -1,0 +1,36 @@
+﻿@model task.Models.Category
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 style="color:#4E1A3D;text-align:center;font-family: fantasy;margin-top:15px"><i>Details</i></h1>
+
+<div>
+    <h4 style="color:#4E1A3D;text-align:center;font-family: fantasy;margin-top:15px"><i>>Category</i></h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Category_Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Category_Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Category_Limit)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Category_Limit)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Category_Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Category_Description)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Category_Id" style="color:#4E1A3D">Edit</a> |
+    <a asp-action="Index" style="color:#4E1A3D">Back to List</a>
+</div>
