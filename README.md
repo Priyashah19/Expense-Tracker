@@ -39,3 +39,4 @@ Hey everyone..I am your guide to how make a Expense Tracker Project using Asp.ne
 
 <img width="948" alt="category_db" src="https://user-images.githubusercontent.com/95396473/212420757-e27256f6-a52a-4c5b-af3d-35b4a37625cd.PNG">
 <img width="959" alt="expense_db" src="https://user-images.githubusercontent.com/95396473/212420782-69f9f02d-573a-4784-9849-12e48a50c114.PNG">
+![Create_category](https://user-images.githubusercontent.com/95396473/212559841-c3b67957-d4f2-4042-ade5-c1bc405d4f55.png)
