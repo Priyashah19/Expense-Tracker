@@ -19,15 +19,15 @@ Hey everyone..I am your guide to how make a Expense Tracker Project using Asp.ne
 
 >> STAGES FOR INSTALLATION 
    ------------------------
--STEP 1: First,Open VS Code 2022 (Visual Studio (2022))
--STEP 2: Then install all the prerequisites.
--STEP 3: Then you need to load the project.
--STEP 4: Create models in that project.
--STEP 5: In the package manager,Add Migration.
--STEP 6: Then In your package manager use command Update-Database.
--STEP 7: Finally you need to run the program.
--STEP 8: Let Swagger run .
--STEP 9: Open the Index.html file from the directory.
+- STEP 1: First,Open VS Code 2022 (Visual Studio (2022))
+- STEP 2: Then install all the prerequisites.
+- STEP 3: Then you need to load the project.
+- STEP 4: Create models in that project.
+- STEP 5: In the package manager,Add Migration.
+- STEP 6: Then In your package manager use command Update-Database.
+- STEP 7: Finally you need to run the program.
+- STEP 8: Let Swagger run .
+- STEP 9: Open the Index.html file from the directory.
 
 >>SCREENSHOTS
  -------------
