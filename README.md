@@ -3,6 +3,7 @@
 Hey everyone..I am your guide to how make a Expense Tracker Project using Asp.net MVC.Read me to run this project.
 
 >> PREREQUISITES
+ ----------------
 
 - Visual Studio (2022)
 - Microsoft SQL Server Management Studio
@@ -17,18 +18,19 @@ Hey everyone..I am your guide to how make a Expense Tracker Project using Asp.ne
 	>- Swagger
 
 >> STAGES FOR INSTALLATION 
-
-STEP 1: First,Open VS Code 2022 (Visual Studio (2022))
-STEP 2: Then install all the prerequisites.
-STEP 3: Then you need to load the project.
-STEP 4: Create models in that project.
-STEP 5: In the package manager,Add Migration.
-STEP 6: Then In your package manager use command Update-Database.
-STEP 7: Finally you need to run the program.
-STEP 8: Let Swagger run .
-STEP 9: Open the Index.html file from the directory.
+   ------------------------
+-STEP 1: First,Open VS Code 2022 (Visual Studio (2022))
+-STEP 2: Then install all the prerequisites.
+-STEP 3: Then you need to load the project.
+-STEP 4: Create models in that project.
+-STEP 5: In the package manager,Add Migration.
+-STEP 6: Then In your package manager use command Update-Database.
+-STEP 7: Finally you need to run the program.
+-STEP 8: Let Swagger run .
+-STEP 9: Open the Index.html file from the directory.
 
 >>SCREENSHOTS
+ -------------
 <img width="940" alt="Dashboard" src="https://user-images.githubusercontent.com/95396473/212420550-540f39a2-c2ff-4660-a514-0926f5460c3d.PNG">
 <img width="960" alt="Dashboard1" src="https://user-images.githubusercontent.com/95396473/212420684-5aa5e620-9471-4623-ad21-4a938419eaa1.PNG">
 <img width="828" alt="Dashboard2" src="https://user-images.githubusercontent.com/95396473/212420724-16f6bf6d-52bb-441d-9de2-9f8c9923530d.PNG">
