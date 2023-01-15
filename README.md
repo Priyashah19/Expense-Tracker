@@ -9,12 +9,12 @@ Hey everyone..I am your guide to how make a Expense Tracker Project using Asp.ne
 - .Net Framework
 - .Net Core
 - And NuGet Packages(includes)
-	> Asp.Net Core Entity Framework
-	> Asp.Net Core Core Sql Server
-	> Asp.Net Core 
-	> Asp .Net Core Design
-	> Asp .Net Core Tools
-	> Swagger
+	>- Asp.Net Core Entity Framework
+	>- Asp.Net Core Core Sql Server
+	>- Asp.Net Core 
+	>- Asp .Net Core Design
+	>- Asp .Net Core Tools
+	>- Swagger
 
 >> STAGES FOR INSTALLATION 
 
