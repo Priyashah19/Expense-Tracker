@@ -9,6 +9,23 @@
     <link rel="stylesheet" href="~/task.styles.css" asp-append-version="true" />
 </head>
 <body>
+     <header>
+        <div class="main">
+            <nav>
+                <div class="sidenav">
+                    <i> <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Index">Home</a></i>
+                    <i>
+                        <a class="nav-link " asp-area="" asp-controller="Dashboard" asp-action="DashIndex">Dashboard</a>
+                    </i>
+                    <i>
+                        <a class="nav-link " asp-area="" asp-controller="Categories" asp-action="Index">Category</a>
+                    </i>
+                    <i> <a class="nav-link " asp-area="" asp-controller="Transactions" asp-action="Index">Expense</a>
+                </div>
+
+            </nav>
+            </div>
+            </header>
    @* <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
@@ -36,7 +53,7 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted" style=margin-left:160px>
         <div class="container">
             &copy; 2023 - task - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
