@@ -29,6 +29,11 @@ Hey everyone..I am your guide to how make a Expense Tracker Project using Asp.ne
 - STEP 8: Let Swagger run .
 - STEP 9: Open the Index.html file from the directory.
 
+>>NOTE
+------
+- You need to change the name of the server inside the connection string.
+- All the UI part will be in the Frontend Folder.
+
 >>SCREENSHOTS
  -------------
 
